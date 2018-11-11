@@ -5,7 +5,7 @@
 Dev Server: -
 
 ```
-npm restore
+npm install
 npm start
 ```
 
@@ -15,3 +15,4 @@ npm start
 * Add some redux
 * Do we need gulp to build?
 * Do we need a CSS pre-processor?
+* Add some unit tests
