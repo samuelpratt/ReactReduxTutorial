@@ -1,13 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./components/App.js"
-
-import {
-    addTodo,
-    toggleTodo,
-    setVisibilityFilter,
-    VisibilityFilters
-  } from "./state/actions"
+import { Provider } from "react-redux"
 
 import { createStore } from 'redux'
 import todoApp from "./state/reducers"
@@ -20,6 +14,10 @@ console.log(store.getState())
 // Note that subscribe() returns a function for unregistering the listener
 const unsubscribe = store.subscribe(() => console.log(store.getState()))
 
-store.dispatch(addTodo("Make this work"))
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
