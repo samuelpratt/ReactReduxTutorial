@@ -17,7 +17,7 @@ Loosely based on https://hackernoon.com/how-to-build-a-react-project-from-scratc
 
 ## TODO
 
-* ~~Basic project structure ~~
+* ~~Basic project structure~~
 * ~~Add some redux (based on https://redux.js.org/basics)~~
 * Fix the bug where adding items breaks the constraints
 * Add some unit tests
